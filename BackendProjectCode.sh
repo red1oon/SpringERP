@@ -1,4 +1,7 @@
 #!/bin/bash
+::MIT License - author - red1 - version 0.1 alpha - Sep 8 2024
+::backend complied and launch error free, still debugging the front-end.
+::Takes Claude AI / ChatGPT4o 2 days to interact this sample code.
 
 echo 'Setting up project...'
 mkdir -p .
