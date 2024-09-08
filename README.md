@@ -1,5 +1,5 @@
 # SpringERP
-ERP Fork of iDempiere Project
+SpringBoot Fork of iDempiere Project
 
 ```markdown
 # SpringERP - Modern iDempiere Backend
@@ -35,6 +35,60 @@ The project follows a standard Spring Boot application structure:
 - `config`: Configuration classes for Spring Boot.
 - `aspect`: Aspect-oriented programming components.
 - `strategy`: Strategy pattern implementations for entity resolution.
+
+##Project Structure
+ 
+|____logs
+|____target
+| |____maven-archiver
+| | |____pom.properties
+| |____backend-1.0-SNAPSHOT.jar.original
+| |____generated-sources
+| | |____annotations
+| |____classes 
+|____src
+| |____main
+| | |____java
+| | | |____com
+| | | | |____idempiere
+| | | | | |____erp
+| | | | | | |____entity
+| | | | | | | |____ADWindow.java
+| | | | | | | |____ADTab.java
+| | | | | | | |____ADTable.java
+| | | | | | | |____ADColumn.java
+| | | | | | | |____ADMenu.java
+| | | | | | | |____ADField.java
+| | | | | | |____App.java
+| | | | | | |____config
+| | | | | | | |____JpaConfig.java
+| | | | | | |____aspect
+| | | | | | | |____ResolutionAspect.java
+| | | | | | |____BackendApplication.java
+| | | | | | |____controller
+| | | | | | | |____FormMetadataController.java
+| | | | | | |____service
+| | | | | | | |____FormMetadataService.java
+| | | | | | | |____ResolutionService.java
+| | | | | | |____repository
+| | | | | | | |____ADTableRepository.java
+| | | | | | | |____ADFieldRepository.java
+| | | | | | | |____ADMenuRepository.java
+| | | | | | | |____ADWindowRepository.java
+| | | | | | | |____ADColumnRepository.java
+| | | | | | | |____ADTabRepository.java
+| | | | | | |____model
+| | | | | | | |____TabMetadata.java
+| | | | | | | |____FormMetadataResponse.java
+| | | | | | | |____FieldMetadata.java
+| | | | | | |____strategy
+| | | | | | | |____ResolutionStrategy.java
+| | | | | | | |____UserResolutionStrategy.java
+| | | | | | | |____NumericIdResolutionStrategy.java
+| | |____resources
+| | | |____application.properties
+| |____test
+|____pom.xml  
 
 ## Setup and Installation
 
